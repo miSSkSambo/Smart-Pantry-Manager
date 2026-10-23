@@ -1,0 +1,25 @@
+erDiagram
+    RECIPES ||--o{ RECIPE_INGREDIENTS : contains
+    RECIPES {
+      integer id PK
+      text name
+      text steps
+    }
+    RECIPE_INGREDIENTS {
+      integer id PK
+      integer recipe_id FK
+      text ingredient_name
+      real quantity
+      text unit
+    }
+    PANTRY_ITEMS {
+      integer id PK
+      text name
+      real quantity
+      text unit
+      text expiry_date
+    }
+    SETTINGS {
+      text key PK
+      text value
+    }
