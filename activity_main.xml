@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/cream">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:title="My Pantry" android:titleTextColor="@android:color/white" android:background="@color/green_700"/>
+    <TextView android:id="@+id/emptyText" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="24dp" android:text="Your pantry is empty. Add your first ingredient." android:gravity="center" android:textColor="@color/text_dark" android:visibility="gone"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/pantryRecycler" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:padding="12dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/addFab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="end" android:layout_margin="16dp" android:contentDescription="Add pantry item" android:src="@android:drawable/ic_input_add"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="@android:color/white">
+        <Button android:id="@+id/navPantry" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Pantry"/>
+        <Button android:id="@+id/navSuggestions" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Recipes"/>
+        <Button android:id="@+id/navSettings" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Settings"/>
+    </LinearLayout>
+</LinearLayout>
